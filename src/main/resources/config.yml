@@ -1,0 +1,60 @@
+# MARK -- Map 1
+map1:
+  displayName: Castle
+  displayMaterial: COBBLESTONE
+  worldName: map1
+  enabled: true
+  spawnpoints:
+    player:
+      x: 0
+      y: 100
+      z: 0
+      yaw: 90
+    zombies:
+      1:
+        x: 50
+        y: 100
+        z: 50
+      2:
+        x: 50
+        y: 100
+        z: 25
+    supplyCrates:
+      1:
+        x: -50
+        y: 100
+        z: -50
+      2:
+        x: -50
+        y: 100
+        z: -25
+    tour:
+      1:
+        x: 50
+        y: 150
+        z: 50
+        yaw: 90
+# MARK -- Tour Configuration
+tourMessages:
+- "&cWelcome to Zombies."
+- "&cThe objective of the game is to kill each wave of zombies."
+- "&cYou can buy items and other things in the shop."
+- "&cRemember, you can also revive dead players as well!"
+- "&cMake sure to upgrade your health in the Buffs section!"
+tourActions:
+- teleport
+- wait:1
+- display:1
+- wait:2
+- display:2
+- wait:1
+- display:3
+- wait:3
+- open:shop
+- wait:3
+- display:4
+- wait:3
+- open:weapons
+- wait:2
+- open:shop
+- end

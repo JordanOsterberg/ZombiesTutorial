@@ -1,0 +1,3 @@
+name: Zombies
+version: ${project.version}
+main: tech.shadowsystems.zombies
